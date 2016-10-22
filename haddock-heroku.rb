@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'haddock'
-require 'constant-redefinition'
 
 Haddock::Password.diction = 'words.txt'
 
@@ -21,9 +20,9 @@ set :views, settings.root
 get '/' do
   len = params[:length].to_i
   @length = case
-    when len <= 0 then 16
-    when len <  8 then  8
-    when len > 128 then 128
+    when len <= 0 then 32
+    when len <  16 then  16
+    when len > 50 then 50
     else len
   end
   @passwords = []
