@@ -9,11 +9,10 @@ CSH Haddock
 
 Original license for
 [Haddock on Heroku](https://github.com/grantovich/haddock-on-heroku) is unknown.
-Everything modified from
-https://github.com/grantovich/haddock-on-heroku/commit/367c41b7e8ecb9c6b418eeaefc4e215de6a8da7a
+Everything modified from commit 367c41b7e8ecb9c6b418eeaefc4e215de6a8da7a
 and on is licensed under the MIT License
 
-© 2016, Liam Middlebrook <liammiddlebrook@gmail.com>.
+© 2016, Computer Science House.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
