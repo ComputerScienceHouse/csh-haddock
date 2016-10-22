@@ -20,8 +20,5 @@ DEPENDENCIES
   rack-ssl-enforcer
   sinatra
 
-RUBY VERSION
-   ruby 2.3.0
-
 BUNDLED WITH
-   1.13.2
+   1.13.5
