@@ -29,3 +29,13 @@ get '/' do
   10.times{ @passwords << Haddock::Password.generate(@length) }
   erb :index
 end
+
+get '/:len'
+ @length = case
+    when len <= 0 then 32
+    when len < 16 then 16
+    when len > 50 then 50
+    else len
+  end
+  render plain: Haddock::Password.generate(@length) 
+end
