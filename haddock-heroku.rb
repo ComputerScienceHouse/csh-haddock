@@ -30,7 +30,7 @@ get '/' do
   erb :index
 end
 
-get '/:len'
+get '/length/:len'
  @length = case
     when len <= 0 then 32
     when len < 16 then 16
