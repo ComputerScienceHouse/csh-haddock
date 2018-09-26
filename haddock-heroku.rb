@@ -31,7 +31,11 @@ get '/' do
 end
 
 get '/length/:len'
- @length = case
+  len = Integer(len) rescue false
+  if !len
+    render plain: "That's not an integer"
+  end
+  @length = case
     when len <= 0 then 32
     when len < 16 then 16
     when len > 50 then 50
