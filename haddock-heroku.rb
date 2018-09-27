@@ -30,7 +30,7 @@ get '/' do
   erb :index
 end
 
-get '/length/:len'
+get '/length/:len' do
   len = Integer(len) rescue false
   if !len
     render plain: "That's not an integer"
