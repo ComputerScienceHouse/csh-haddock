@@ -31,15 +31,17 @@ get '/' do
 end
 
 get '/length/:len' do
-  len = Integer(len) rescue false
+  content_type 'text/plain'
+  len = Integer(params[:len]) rescue false
   if !len
-    render plain: "That's not an integer"
+    "That's not an integer"
+  else
+    @length = case
+      when len <= 0 then 32
+      when len < 16 then 16
+      when len > 50 then 50
+      else len
+    end
+    Haddock::Password.generate(@length)
   end
-  @length = case
-    when len <= 0 then 32
-    when len < 16 then 16
-    when len > 50 then 50
-    else len
-  end
-  render plain: Haddock::Password.generate(@length) 
 end
