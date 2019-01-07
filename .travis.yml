@@ -1,6 +1,12 @@
+jobs:
+  include:
+    - stage: syntax
+    - script:
+      - ruby -c haddock-heroku.rb
+    - stage: test
+    - script:
+      - bundle exec rackup &
+      - sleep 1 && curl -fs -o /dev/null localhost:9292
+      - curl -fs -o /dev/null localhost:9292/length/32
 language: ruby
-script:
-    - ruby -c haddock-heroku.rb
-    - bundle exec rackup &
-    - sleep 1 && curl -fs -o /dev/null localhost:9292
-    - curl -fs -o /dev/null localhost:9292/length/32
+script: ''
