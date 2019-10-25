@@ -7,7 +7,7 @@ CSH Haddock
 
 ## License
 
-[Haddock on Heroku](https://github.com/grantovich/haddock-on-heroku) is Copyright (c) 2016, Alex Grant <https://grantovich.net>.
+[Haddock on Heroku](https://github.com/grantovich/haddock-on-heroku) is Copyright (c) 2016, [Cora Grant](https://digitalcora.me/).
 
 The included 12dicts word list is (c) Alan Beale and has been released into the
 public domain. <http://wordlist.aspell.net/12dicts-readme/>
